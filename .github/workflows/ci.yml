@@ -24,6 +24,7 @@ jobs:
 
       - name: Run Tests
         run: |
+          export PYTHONPATH=$PYTHONPATH:.
           pytest
 
       - name: Build Docker Image
